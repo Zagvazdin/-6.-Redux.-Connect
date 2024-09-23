@@ -1,0 +1,59 @@
+/* src/ProductList.css */
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Отступ между карточками */
+    justify-content: flex-start; /* Выравнивание по левому краю */
+    margin-right: 20px; /* Отступ справа для всего списка */
+    margin-left: 20px; /* Отступ слева от экрана */
+}
+/* Добавьте стиль для текста */
+.product-card h3,
+.product-card p {
+  color: black; /* Черный цвет текста */
+}
+
+.product-card {
+   background-color: rgba(255, 255, 255, 0.8); /* Полупрозрачный белый фон */
+   border-radius: 10px; /* Закругленные углы */
+   padding: 20px; /* Отступы внутри карточки */
+   margin: 10px; /* Отступы между карточками */
+   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Тень для карточки */
+   width: 200px; /* Ширина карточки */
+   text-align: center; /* Центрирование текста */
+   
+}
+
+.product-image {
+    width: 100%; /* Изображение растягивается на всю ширину карточки */
+    height: auto; /* Автоматическая высота для сохранения пропорций */
+}
+.add-product-card {
+    margin-top: 20px; /* Отступ сверху */
+    margin-left: 20px; /* Отступ слева */
+    
+}
+button {
+    margin-top: 10px; /* Отступ сверху для кнопки */
+    width: 100%; /* Ширина кнопки на всю карточку */
+    padding: 10px; /* Внутренние отступы кнопки */
+    background-color: #007bff; /* Цвет фона кнопки */
+    color: white; /* Цвет текста кнопки */
+    border: none; /* Убираем границу */
+    border-radius: 5px; /* Закругляем углы */
+    cursor: pointer; /* Указатель при наведении */
+}
+
+button:hover {
+    background-color: #0056b3; /* Цвет кнопки при наведении */
+}
+.product-image {
+    width: 150px; /* Фиксированная ширина изображения */
+    height: 150px; /* Фиксированная высота изображения */
+    object-fit: contain; /* Сохранение пропорций без обрезки */
+    border-radius: 8px; /* Закругление углов изображения */
+  }
+input {
+    text-transform: capitalize; /* Преобразует первую букву каждого слова в верхний регистр */
+  }
+   
